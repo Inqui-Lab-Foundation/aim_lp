@@ -310,10 +310,13 @@ Author: Webstrot
         const api_url = "https://aim-api.unisolve.org/api/v1/dashboard/mapStats";
         var api_data;
         let dataOfmap = {};
+       const config = { headers: {
+                Authorization : 'O10ZPA0jZS38wP7cO9EhI3jaDf24WmKX62nWw870'
+            }}
 	async function getUser() {
 	// Making an API call (request)
 	// and getting the response back
-	const response = await fetch(api_url);
+	const response = await fetch(api_url,config);
 	
 	// Parsing it to JSON format
 	const data = await response.json();
@@ -324,10 +327,10 @@ Author: Webstrot
         const overallSchools = parseInt(entry.overall_schools);
         dataOfmap[state_name] = {'reg_schools':parseInt(entry.reg_schools),'teams':parseInt(entry.teams),'students':parseInt(entry.students),'ideas':parseInt(entry.ideas),'reg_mentors':parseInt(entry.reg_mentors),'district_name':state_name};
     }
-    text.textContent = dataOfmap['all'].reg_schools;
-    text1.textContent = dataOfmap['all'].teams;
-    text2.textContent = dataOfmap['all'].students;
-    text3.textContent = dataOfmap['all'].ideas;
+    text.textContent = dataOfmap['all'].reg_schools + 4483;
+    text1.textContent = dataOfmap['all'].teams + 29318;
+    text2.textContent = dataOfmap['all'].students + 133422;
+    text3.textContent = dataOfmap['all'].ideas + 26954;
     text4.textContent = "INDIA"
     text5.textContent = dataOfmap['all'].reg_mentors;
     }
@@ -347,10 +350,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['DELHI'].ideas;
                 text4.textContent = dataOfmap['DELHI'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -363,10 +366,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['ANDAMAN AND NICOBAR ISLAND'].ideas;
                 text4.textContent = dataOfmap['ANDAMAN AND NICOBAR ISLAND'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -379,10 +382,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['ANDHRA PRADESH'].ideas;
                 text4.textContent = dataOfmap['ANDHRA PRADESH'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -395,10 +398,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['ARUNACHAL PRADESH'].ideas;
                 text4.textContent = dataOfmap['ARUNACHAL PRADESH'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -411,10 +414,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['ASSAM'].ideas;
                 text4.textContent = dataOfmap['ASSAM'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -427,10 +430,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['BIHAR'].ideas;
                 text4.textContent = dataOfmap['BIHAR'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -443,10 +446,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['CHANDIGARH'].ideas;
                 text4.textContent = dataOfmap['CHANDIGARH'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -459,10 +462,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['CHHATTISGARH'].ideas;
                 text4.textContent = dataOfmap['CHHATTISGARH'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -475,10 +478,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['DADRA AND NAGAR HAVELI'].ideas;
                 text4.textContent = dataOfmap['DADRA AND NAGAR HAVELI'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -491,10 +494,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['GOA'].ideas;
                 text4.textContent = dataOfmap['GOA'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -507,10 +510,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['GUJARAT'].ideas;
                 text4.textContent = dataOfmap['GUJARAT'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -523,10 +526,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['HIMACHAL PRADESH'].ideas;
                 text4.textContent = dataOfmap['HIMACHAL PRADESH'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -539,10 +542,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['HARYANA'].ideas;
                 text4.textContent = dataOfmap['HARYANA'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -555,10 +558,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['JHARKHAND'].ideas;
                 text4.textContent = dataOfmap['JHARKHAND'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -571,10 +574,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['JAMMU AND KASHMIR'].ideas;
                 text4.textContent = dataOfmap['JAMMU AND KASHMIR'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -587,10 +590,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['KARNATAKA'].ideas;
                 text4.textContent = dataOfmap['KARNATAKA'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -603,10 +606,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['KERALA'].ideas;
                 text4.textContent = dataOfmap['KERALA'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -619,10 +622,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['LADAKH'].ideas;
                 text4.textContent = dataOfmap['LADAKH'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -635,10 +638,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['MAHARASHTRA'].ideas;
                 text4.textContent = dataOfmap['MAHARASHTRA'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -651,10 +654,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['MEGHALAYA'].ideas;
                 text4.textContent = dataOfmap['MEGHALAYA'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -667,10 +670,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['MANIPUR'].ideas;
                 text4.textContent = dataOfmap['MANIPUR'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -683,10 +686,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['MADHYA PRADESH'].ideas;
                 text4.textContent = dataOfmap['MADHYA PRADESH'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -699,10 +702,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['MIZORAM'].ideas;
                 text4.textContent = dataOfmap['MIZORAM'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -715,10 +718,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['NAGALAND'].ideas;
                 text4.textContent = dataOfmap['NAGALAND'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -731,10 +734,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['ODISHA'].ideas;
                 text4.textContent = dataOfmap['ODISHA'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -747,10 +750,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['PUNJAB'].ideas;
                 text4.textContent = dataOfmap['PUNJAB'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -763,10 +766,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['PUDUCHERRY'].ideas;
                 text4.textContent = dataOfmap['PUDUCHERRY'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -779,10 +782,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['RAJASTHAN'].ideas;
                 text4.textContent = dataOfmap['RAJASTHAN'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -795,10 +798,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['SIKKIM'].ideas;
                 text4.textContent = dataOfmap['SIKKIM'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -811,26 +814,26 @@ Author: Webstrot
                 text3.textContent = dataOfmap['TELANGANA'].ideas;
                 text4.textContent = dataOfmap['TELANGANA'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
 
             document.getElementById('IN-TN')
             .addEventListener('mouseover', function(e) {
-                text.textContent =  dataOfmap['TAMIL NADU'].reg_schools;
-                text1.textContent = dataOfmap['TAMIL NADU'].teams;
-                text2.textContent = dataOfmap['TAMIL NADU'].students;
-                text3.textContent = dataOfmap['TAMIL NADU'].ideas;
+                text.textContent =  dataOfmap['TAMIL NADU'].reg_schools + 4483;
+                text1.textContent = dataOfmap['TAMIL NADU'].teams + 29318;
+                text2.textContent = dataOfmap['TAMIL NADU'].students + 133422;
+                text3.textContent = dataOfmap['TAMIL NADU'].ideas + 26954;
                 text4.textContent = dataOfmap['TAMIL NADU'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -843,10 +846,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['TRIPURA'].ideas;
                 text4.textContent = dataOfmap['TRIPURA'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -859,10 +862,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['UTTAR PRADESH'].ideas;
                 text4.textContent = dataOfmap['UTTAR PRADESH'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -875,10 +878,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['UTTARAKHAND'].ideas;
                 text4.textContent = dataOfmap['UTTARAKHAND'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -891,10 +894,10 @@ Author: Webstrot
                 text3.textContent = dataOfmap['WEST BENGAL'].ideas;
                 text4.textContent = dataOfmap['WEST BENGAL'].district_name;
                 addEventListener("mouseout", function(e) {
-                text.textContent =   dataOfmap['all'].reg_schools;
-                text1.textContent = dataOfmap['all'].teams;
-                text2.textContent = dataOfmap['all'].students;
-                text3.textContent = dataOfmap['all'].ideas;
+                text.textContent =   dataOfmap['all'].reg_schools + 4483;
+                text1.textContent = dataOfmap['all'].teams + 29318;
+                text2.textContent = dataOfmap['all'].students + 133422;
+                text3.textContent = dataOfmap['all'].ideas + 26954;
                 text4.textContent = "INDIA"
                 });
             });
@@ -906,15 +909,14 @@ Author: Webstrot
 
     <!-- Jquery Lib File -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"
-        integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxy9rx7HNQlGYl1kPzQho1wx4JwY8wC"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" ></script>
 
     <!-- Bootstrap Js -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> Sensitive -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 
     <!-- Jquery Lib File -->
     <script src="assets/js/jquery_1.12.4_jquery.min.js"></script>
